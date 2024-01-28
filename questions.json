@@ -1,39 +1,189 @@
 {
-"questions": [
-{
-    "id": 11,
-    "categorie": "Consommation alimentaire",
-    "text": "Suivez-vous un régime alimentaire végétarien ou végétalien ?",
-    "responses": {
-    "yes": {
-    "points": 10,
-    "message": "Vous faites parti du top 8% des canadiens !"
+    "questions": [
+    {
+        "id": 1,
+        "categorie": "Menage",
+        "text": "Séparez-vous vos déchets en différentes catégories telles que le plastique, le papier, le verre et les déchets alimentaires ?",
+        "responses": {
+        "yes": {
+            "points": 10,
+            "message": "88 % des recycleurs québecois pensent que les personnes qui récupèrent peuvent être fières de ce geste. SOYEZ FIERS !!"
+        },
+        "no": {
+            "points": 0,
+            "message": "51 % des Québecois prennent des raccourcis en mettant au bac de récupération des matières même s’ils doutent qu’elles y ont leur place. You can do better :) "
+        }
+        }
     },
-    "no": {
-    "points": 0,
-    "message": "Consommer moins de viande réduit votre empreinte carbonne"
-    }
+    {
+        "id": 2,
+        "categorie": "Menage",
+        "text": "Pratiquez vous le compostage, le fameux bac brun ?",
+        "responses": {
+        "yes": {
+            "points": 10,
+            "message": "BRAVO ! Vous faites parties des 64% des québecois qui pratiquent le compostage !"
+        },
+        "no": {
+            "points": 0,
+            "message": "Composter, c’est détourner près de 50 % du contenu de votre poubelle, pour ainsi donner une deuxième vie à vos matières compostables ! "
+        }
+        }
+    },
+    {
+        "id": 3,
+        "categorie": "Menage",
+        "text": "Avez-vous évité d'utiliser des produits à usage unique tels que les sacs plastiques, les gobelets et les couverts jetables ?",
+        "responses": {
+        "yes": {
+            "points": 10,
+            "message": "Au Canada, à titre indicatif, plus de trois millions de tonnes de déchets plastiques ont été produites durant l’année 2023. L’emballage représentait la moitié de ces déchets."
+        },
+        "no": {
+            "points": 0,
+            "message": "Environ 8,3 milliards de tonnes de plastique ont été produites depuis les années 1950, ce qui représente le poids d’environ un milliard d’éléphants ou 47 millions de baleines bleues ..."
+        }
+        }
+    },
+    {
+        "id": 4,
+        "categorie": "Menage",
+        "text": "Éteignez-vous systématiquement les lumières et les appareils électroniques lorsque vous quittez une pièce ?",
+        "responses": {
+        "yes": {
+            "points": 10,
+            "message": "Féliciation ! L’éclairage représente 12 % de la facture d’électricité. "
+        },
+        "no": {
+            "points": 0,
+            "message": "L’éclairage représente 12 % de la facture d’électricité soyez économe."
+        }
+        }
+    },
+    {
+        "id": 5,
+        "categorie": "Menage",
+        "text": "Privilégiez-vous le lavage à froid autant que possible pour économiser de l'énergie ? ",
+        "responses": {
+            "yes": {
+            "points": 10,
+            "message": "SUPER ! Vous économisez sur votre Hydro en reduisant de 60% l'énergie utilisée"
+            },
+            "no": {
+            "points": 0,
+            "message": "Le lavage à froid est le choix le plus écologique : baisser la température de lavage de 10 degrés peut réduire les émissions de carbone du cycle de lavage de 35 % !"
+            }
+        }
+    },
+    {
+        "id": 6,
+        "categorie": "Transport",
+        "text": "Avez-vous utilisé le transport en commun aujourd'hui ? Exemple : Bus, métro, etc.",
+        "responses": {
+        "yes": {
+        "points": 10,
+        "message": "En 2021, 14 % des Québecois utilisaient le transport en commun pour effectuer leur déplacement domicile-travail. Vous faites une différence !"
+        },
+        "no": {
+        "points": 0,
+        "message": "En 2022, plus de 237,1 millions de déplacements ont été réalisés sur le réseau STM. Pourquoi pas les joindre ?"
+        }
     }
     },
     {
-    "id": 12,
-    "categorie": "Consommation alimentaire",
-    "text": "Mangez-vous moins d'une fois par semaine dans des restaurants ?",
-    "responses": {
-    "yes": {
+        "id": 7,
+        "categorie": "Transport",
+        "text": "Avez-vous partagé un trajet en covoiturage aujourd'hui ?",
+        "responses": {
+        "yes": {
+        "points": 10,
+        "message": "Bravo ! Vous faites partie des 14,2 % de navetteurs à Montréal !"
+        },
+        "no": {
+        "points": 0,
+        "message": "Dans la région de Montréal, le nombre de sièges vides est estimé à 14 312 000 dans les trajets quotidiens effectués en auto du lundi au vendredi ..."
+        }
+    }
+    },
+    {
+        "id": 8,
+        "categorie": "Transport",
+        "text": "Avez-vous privilégié le vélo ou la marche pour vos déplacements aujourd'hui ?",
+        "responses": {
+        "yes": {
+        "points": 10,
+        "message": "Bravo ! Marcher un kilomètre émettrait 75 % de gaz à effet de serre en moins que prendre la voiture pour le même trajet !"
+        },
+        "no": {
+        "points": 0,
+        "message": "En 2023, BIXI à aidé les citoyens de Montréal à effectuer 11 790 763 déplacements ! Avez-vous pensez à suivre la trend ?"
+        }
+    }
+    },
+    {
+        "id": 9,
+        "categorie": "Transport",
+        "text": "Avez-vous opté pour une voiture électrique lors de vos déplacements aujourd'hui ?",
+        "responses": {
+        "yes": {
+        "points": 10,
+        "message": "Le Québec représente plus de 54% des 457 836 véhicules électriques au Canada !"
+        },
+        "no": {
+        "points": 0,
+        "message": "Incluant son cycle de vie, une voiture électrique émet 65% moins de gaz à effet de serre"
+        }
+    }
+    },
+    {
+        "id": 10,
+        "categorie": "Transport",
+        "text": "Avez-vous pris l'avion au cours des 10 derniers jours ?",
+        "responses": {
+        "yes": {
+        "points": 10,
+        "message": "Un avion émet en moyenne 9 kgCO2e/100km/passager."
+        },
+        "no": {
+        "points": 0,
+        "message": "Un avion émet en moyenne 9 kgCO2e/100km/passager."
+        }
+    }
+    },
+    {
+        "id": 11,
+        "categorie": "Consommation alimentaire",
+        "text": "Avez-vous évité de consommer de la viande ?",
+        "responses": {
+        "yes": {
+        "points": 10,
+        "message": "Vous faites parti du top 8% des canadiens !"
+        },
+        "no": {
+        "points": 0,
+        "message": "Ne pas consommer de viande pourrait réduire de 84% l'impact environemental de l'agriculture"
+        }
+    }
+    },
+    {
+        "id": 12,
+        "categorie": "Consommation alimentaire",
+        "text": "Avez-vous mangé dans un restaurant ?",
+        "responses": {
+        "yes": {
         "points": 10,
         "message": "Vous êtes similaire à 46% des Québecois !"
-    },
-    "no": {
+        },
+        "no": {
         "points": 0,
-        "message": "Le transport d'aliments des restaurants pollue plus que l'achat en magasin"
+        "message": "Les pertes et gaspillages des restaurants sont aux alentours de 160g par client, soit 27%"
         }
     }
     },
     {
         "id": 13,
         "categorie": "Consommation alimentaire",
-        "text": "Achetez-vous régulièrement des produits alimentaires locaux et de saison ?",
+        "text": "Avez-vous acheté des produits locaux et de saisons lors de vos dernières courses ?",
         "responses": {
         "yes": {
         "points": 10,
@@ -41,39 +191,41 @@
         },
         "no": {
         "points": 0,
-        "message": " L'importation d'aliments pollue énormément, essayez de manger des produits locaux"
+        "message": "Le transport d'aliments représente 13%, un nombre non négligable"
         }
-        }
-        },
-        {
+    }
+    },
+    {
         "id": 14,
         "categorie": "Consommation alimentaire",
-        "text": "Faites-vous des efforts pour réduire le gaspillage alimentaire à la maison ?",
+        "text": "Avez-vous fait des efforts pour éviter de gaspiller de la nourriture ?",
         "responses": {
         "yes": {
-            "points": 10,
-            "message": "La moitié des Québécois font comme vous !"
+        "points": 10,
+        "message": "La moitié des Québécois font comme vous !"
         },
         "no": {
-            "points": 0,
-            "message": "Eviter le gaspillage vous fera également économiser de l'argent"
-            }
+        "points": 0,
+        "message": "Au Québec, en moyenne 2.4kg de nourriture sont gaspillés par personne chaque jour"
         }
+    }
+    },
+    {
+        "id": 15,
+        "categorie": "Consommation alimentaire",
+        "text": "Avez-vous consommé de l'eau dans un récipient non plastique ?",
+        "responses": {
+        "yes": {
+        "points": 10,
+        "message": "Bravo, vous évitez de contribuer aux 17% des déchets plastiques du monde !"
         },
-        {
-            "id": 15,
-            "categorie": "Consommation alimentaire",
-            "text": "Achetez-vous beaucoup d'aliments ou bouteilles plastiques ?",
-            "responses": {
-            "yes": {
-            "points": 10,
-            "message": "Bravo, vous évitez de contribué aux 17% des déchets plastiques du monde !"
-            },
-            "no": {
-            "points": 0,
-            "message": "Au Canada, moins de 10% du plastique est recyclé, évitez d'acheter des aliments plastifiés"
-            }
-            }
-            }
-]
+        "no": {
+        "points": 0,
+        "message": "Au Canada, moins de 10% du plastique sont recyclés, évitez d'acheter des aliments plastifiés"
+        }
+    }
+    }
+
+
+    ]
 }
