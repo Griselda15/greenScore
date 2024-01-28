@@ -14,7 +14,7 @@ const LoginScreen = ({ navigation }) => {
   const [password, setPassword] = useState("");
 
   const handleLogin = () => {
-    // Simuler une connexion réussie et naviguer directement vers la HomePage
+    // Simuler une connexion rÃ©ussie et naviguer directement vers la HomePage
     useFetch({ fUsrName:  username , fPassword:  password  });
     navigation.navigate("QuestionCard");
   };

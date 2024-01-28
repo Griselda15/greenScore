@@ -35,21 +35,7 @@ for (let i = 0; i < questionsData.questions.length; i++) {
 const Profile = () => {
   const [modalVisible, setModalVisible] = useState(false);
 
-  const [fontLoaded, setFontLoaded] = useState(false); // <-- Add this state variable
-  useEffect(() => {
-    const loadFonts = async () => {
-      await Font.loadAsync({
-        Poppins: require("../assets/fonts/Poppins-Medium.ttf"),
-      });
 
-      setFontLoaded(true); // <-- Set the state to true when the font loads
-    };
-
-    loadFonts();
-  }, []);
-  if (!fontLoaded) {
-    return null;
-  }
   return (
     <View style={styles.leftView}>
       <Modal
@@ -83,7 +69,7 @@ const Profile = () => {
                 }}
                 style={styles.avatar}
               />
-              <Text style={styles.profileTitle}>Will's Profile</Text>
+              <Text style={styles.profileTitle}>Your Profile</Text>
             </View>
             <View style={styles.profileDescContain}>
               <Text style={styles.profileTitle}>
@@ -139,7 +125,7 @@ const Progress = ({ step, steps, height, icon }) => {
   useEffect(() => {
     Animated.timing(animatedValue, {
       toValue: reactive,
-      duration: 300,
+      duration: 100,
       useNativeDriver: true,
     }).start();
   }, []);
@@ -155,7 +141,6 @@ const Progress = ({ step, steps, height, icon }) => {
         {icon}
         <Text
           style={{
-            fontFamily: "Menlo",
             fontSize: 12,
             fontWeight: "900",
             marginBottom: 4,
@@ -198,7 +183,7 @@ const Progress = ({ step, steps, height, icon }) => {
   );
 };
 
-global.bigCount = 0;
+global.bigCount = 1;
 let APoints = 0;
 let MPoints = 0;
 let TPoints = 0;
@@ -241,13 +226,13 @@ export default function QuestionCard() {
     setIsNoClicked(answer === "no");
     setIsNextButtonEnabled(true);
     if (answer == "yes") {
-      if (global.bigCount < 5) {
+      if (global.bigCount < 6) {
         MPoints += questionsData.questions[count].responses.yes.points;
       }
-      if (global.bigCount >= 5 && global.bigCount < 10) {
+      if (global.bigCount >= 6 && global.bigCount <= 10) {
         TPoints += questionsData.questions[count].responses.yes.points;
       }
-      if (global.bigCount >= 10) {
+      if (global.bigCount > 10) {
         APoints += questionsData.questions[count].responses.yes.points;
       }
     }
@@ -297,7 +282,7 @@ export default function QuestionCard() {
       <Profile />
       <View style={styles.profileDescContain}>
               <Text style={styles.points}>
-               {MPoints + TPoints + APoints}
+                {MPoints + TPoints + APoints}
               </Text>
             </View>
       
@@ -377,4 +362,3 @@ export default function QuestionCard() {
   );
 }
 export { APoints, MPoints, TPoints };
-

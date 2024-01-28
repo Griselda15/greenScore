@@ -1,7 +1,6 @@
 import {
   View,
   Text,
-  Pressable,
   Image,
   Share,
   TouchableOpacity,
@@ -15,22 +14,14 @@ import LottieView from "lottie-react-native";
 import styles from "./style";
 
 export default function FinalScore() {
-  const sum = APoints + MPoints + TPoints;
-  useEffect(() => {
-    const loadFont = async () => {
-      await Font.loadAsync({
-        Poppins: require("../assets/fonts/Poppins-Medium.ttf"),
-      });
-    };
-
-    loadFont();
-  }, []);
+  
+  let sum = APoints + MPoints + TPoints;
 
   const Progress = ({ step, steps, height, icon }) => {
     const [width, setWidth] = useState(0);
-    const animatedValue = useRef(new Animated.Value(-1000)).current;
+    const animatedValue = useRef(new Animated.Value(0)).current;
     const reactive = useRef(new Animated.Value(0)).current;
-
+  
     useEffect(() => {
       Animated.timing(animatedValue, {
         toValue: reactive,
@@ -38,11 +29,12 @@ export default function FinalScore() {
         useNativeDriver: true,
       }).start();
     }, []);
-
+  
     useEffect(() => {
       reactive.setValue(-width + (width * step) / steps);
     }, [step, width]);
     let stepcount = step.toString() + " / " + steps.toString();
+
 
     return (
       <>
@@ -50,7 +42,6 @@ export default function FinalScore() {
           {icon}
           <Text
             style={{
-              fontFamily: "Menlo",
               fontSize: 12,
               fontWeight: "900",
               marginBottom: 4,
@@ -168,4 +159,4 @@ export default function FinalScore() {
       </View>
     </SafeAreaView>
   );
-}
+};

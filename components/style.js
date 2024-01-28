@@ -1,4 +1,3 @@
-// style.js
 import { StyleSheet } from "react-native";
 import LottieView from "lottie-react-native";
 
@@ -11,12 +10,11 @@ const styles = StyleSheet.create({
     flex: 2.5,
     alignItems: 'center',
     justifyContent: 'center',
-    marginTop: 100, // ajustez selon la taille de votre icône de profil
+    marginTop: 150, // ajustez selon la taille de votre icône de profil
   },
   quote: {
     margin: 20,
     fontSize: 35,
-    fontFamily: "Portico Regular",
     color: "#2C3922",
     justifyContent: "center",
     alignContent: "center",
@@ -38,7 +36,6 @@ const styles = StyleSheet.create({
   buttonText: {
     fontSize: 35,
     fontWeight: "bold",
-    fontFamily: "Portico Regular",
     color: "#31572c",
     textAlign: "center",
   },
@@ -107,7 +104,6 @@ const styles = StyleSheet.create({
     marginTop: 15,
     padding: 10,
     textAlign: "left",
-    fontFamily: "Poppins",
     color: "#107a06",
   },
   points: {
@@ -127,20 +123,18 @@ const styles = StyleSheet.create({
     justifyContent: 'center',
   },
   yourScore: {
-    fontFamily: 'Poppins',
     fontSize: 38,
     color: '#31572c',
     textAlign: 'center'
   },
   score: {
-    fontFamily: 'Poppins',
     fontSize:106,
     color: '#2C3922',
   },
   shareButton: {
     flex: 1,
     position: 'absolute',
-    bottom: 50,
+    bottom: 40,
   },
   progressBars: {
     width:"90%", 
