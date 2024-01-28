@@ -1,11 +1,12 @@
 import { StyleSheet, View } from 'react-native';
 import React, { useEffect } from 'react';
 import LottieView from 'lottie-react-native';
+import LoginScreen from './login';
 
 const Splash = ({ navigation }) => {
   useEffect(() => {
     setTimeout(() => {
-      navigation.navigate('QuestionCard');
+      navigation.navigate('LoginScreen');
     }, 2000);
   }, []);
 
