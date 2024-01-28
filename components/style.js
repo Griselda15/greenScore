@@ -125,8 +125,42 @@ const styles = StyleSheet.create({
     right: 0,
     alignItems: 'center',
     justifyContent: 'center',
+  },
+  yourScore: {
+    fontFamily: 'Poppins',
+    fontSize: 38,
+    color: '#31572c',
+    textAlign: 'center'
+  },
+  score: {
+    fontFamily: 'Poppins',
+    fontSize:106,
+    color: '#2C3922',
+  },
+  shareButton: {
+    flex: 1,
+    position: 'absolute',
+    bottom: 50,
+  },
+  progressBars: {
+    width:"90%", 
+  },
+  house:{
+    height: 30,
+    width: 30,
+    borderRadius:50,
+    marginRight:5,
+    marginLeft:5,
 
-  }
+},
+box: {
+    marginTop: 0,
+    flex: 1,
+    backgroundColor: '#bbde76',
+    justifyContent: 'flex-start',
+    alignItems: 'center',
+}
+  
 });
 
 export default styles;

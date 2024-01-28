@@ -3,7 +3,7 @@
     {
         "id": 1,
         "categorie": "Menage",
-        "text": "Séparez-vous vos déchets en différentes catégories telles que le plastique, le papier, le verre et les déchets alimentaires ?",
+        "text": "Séparez-vous vos déchets en différentes catégories telles que le plastique, le verre et les déchets alimentaires ?",
         "responses": {
         "yes": {
             "points": 10,
@@ -11,7 +11,7 @@
         },
         "no": {
             "points": 0,
-            "message": "51 % des Québecois prennent des raccourcis en mettant au bac de récupération des matières même s’ils doutent qu’elles y ont leur place. You can do better :) "
+            "message": "51 % des Québecois doutent sur quel bac choisir. You can do better :) "
         }
         }
     },
@@ -26,22 +26,22 @@
         },
         "no": {
             "points": 0,
-            "message": "Composter, c’est détourner près de 50 % du contenu de votre poubelle, pour ainsi donner une deuxième vie à vos matières compostables ! "
+            "message": "Composter, c’est détourner près de 50 % du contenu de votre poubelle !"
         }
         }
     },
     {
         "id": 3,
         "categorie": "Menage",
-        "text": "Avez-vous évité d'utiliser des produits à usage unique tels que les sacs plastiques, les gobelets et les couverts jetables ?",
+        "text": "Avez-vous évité d'utiliser des produits à usage unique tels que les sacs plastiques ou les gobelets ?",
         "responses": {
         "yes": {
             "points": 10,
-            "message": "Au Canada, à titre indicatif, plus de trois millions de tonnes de déchets plastiques ont été produites durant l’année 2023. L’emballage représentait la moitié de ces déchets."
+            "message": "Au Canada, à titre indicatif, les emballages représentent la moitié des déchets."
         },
         "no": {
             "points": 0,
-            "message": "Environ 8,3 milliards de tonnes de plastique ont été produites depuis les années 1950, ce qui représente le poids d’environ un milliard d’éléphants ou 47 millions de baleines bleues ..."
+            "message": "Environ 8,3 milliards de tonnes de plastique ont été produites depuis les années 1950."
         }
         }
     },
@@ -71,7 +71,7 @@
             },
             "no": {
             "points": 0,
-            "message": "Le lavage à froid est le choix le plus écologique : baisser la température de lavage de 10 degrés peut réduire les émissions de carbone du cycle de lavage de 35 % !"
+            "message": "En effet, baisser la température de lavage de 10 degrés réduit les émissions de 35 % !"
             }
         }
     },
@@ -82,7 +82,7 @@
         "responses": {
         "yes": {
         "points": 10,
-        "message": "En 2021, 14 % des Québecois utilisaient le transport en commun pour effectuer leur déplacement domicile-travail. Vous faites une différence !"
+        "message": "En 2021, 14 % des Québecois utilisaient le transport en commun pour effectuer leurs déplacements quotidiens ! "
         },
         "no": {
         "points": 0,
@@ -101,7 +101,7 @@
         },
         "no": {
         "points": 0,
-        "message": "Dans la région de Montréal, le nombre de sièges vides est estimé à 14 312 000 dans les trajets quotidiens effectués en auto du lundi au vendredi ..."
+        "message": "Dans la région de Montréal, le nombre de sièges vides est estimé à plus de 14M chaque jour"
         }
     }
     },
@@ -112,11 +112,11 @@
         "responses": {
         "yes": {
         "points": 10,
-        "message": "Bravo ! Marcher un kilomètre émettrait 75 % de gaz à effet de serre en moins que prendre la voiture pour le même trajet !"
+        "message": "Bravo ! Marcher un kilomètre émettrait 75 % de gaz à effet de serre en moins que prendre la voiture !"
         },
         "no": {
         "points": 0,
-        "message": "En 2023, BIXI à aidé les citoyens de Montréal à effectuer 11 790 763 déplacements ! Avez-vous pensez à suivre la trend ?"
+        "message": "En 2023, BIXI à aidé près de 12M de montréalais à se déplacer ! Avez-vous pensez à suivre la trend ?"
         }
     }
     },
@@ -168,7 +168,7 @@
     {
         "id": 12,
         "categorie": "Consommation alimentaire",
-        "text": "Avez-vous mangé dans un restaurant ?",
+        "text": "Avez-vous mangé chez vous aujourd'hui ?",
         "responses": {
         "yes": {
         "points": 10,

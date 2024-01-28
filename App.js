@@ -4,6 +4,7 @@ import {NavigationContainer} from '@react-navigation/native';
 import {createNativeStackNavigator} from '@react-navigation/native-stack';
 import QuestionCard from './components/questionCard';
 import Splash from './components/Splash';
+import FinalScore from './components/end';
 const App = () => {
   const Stack = createNativeStackNavigator();
   return (

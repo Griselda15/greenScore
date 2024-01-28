@@ -16,6 +16,7 @@ import LottieView from "lottie-react-native";
 import styles from "./style.js";
 
 import questionsData from "../questions.json";
+import FinalScore from "./end.jsx";
 let totalAPoints = 0;
 let totalMPoints = 0;
 let totalTPoints = 0;
@@ -132,8 +133,8 @@ const Profile = () => {
 };
 const Progress = ({ step, steps, height, icon }) => {
   const [width, setWidth] = useState(0);
-  const animatedValue = useRef(new Animated.Value(-1000)).current;
-  const reactive = useRef(new Animated.Value(-1000)).current;
+  const animatedValue = useRef(new Animated.Value(0)).current;
+  const reactive = useRef(new Animated.Value(0)).current;
 
   useEffect(() => {
     Animated.timing(animatedValue, {
@@ -282,6 +283,14 @@ export default function QuestionCard() {
       },
     ],
   };
+  if (global.bigCount > 15) {
+    return (
+      <View style={styles.container}>
+      <Profile />
+      <FinalScore />
+      </View>
+    )
+  }
 
   return (
     <View style={styles.container}>
@@ -367,3 +376,5 @@ export default function QuestionCard() {
     </View>
   );
 }
+export { APoints, MPoints, TPoints };
+
